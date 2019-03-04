@@ -6,8 +6,8 @@
 2. What five objects are created in the main?
 --An ArrayList Object, 3 Dog objects and a Comparator Object
 
-3. Can you spot the comparator constructor call? Where is the class definition for the comparator?
---Collections.sort requires arguments of the form (List<T> list, Comparator<? super T> c)
+3. Can you spot the comparator constructor call?       Where is the class definition for the comparator?
+     	--Collections.sort requires arguments of the form (List<T> list, Comparator<? super T> c)
 In the following code the Comparator constructor is called in the line labeled "Line 1"
 	
 			Collections.sort(dogs, new Comparator<Animal>(){      //line1 Comparator constructor is called here
