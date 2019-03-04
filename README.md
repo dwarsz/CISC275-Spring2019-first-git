@@ -7,7 +7,7 @@
 --An ArrayList Object, 3 Dog objects and a Comparator Object
 
 3. Can you spot the comparator constructor call? Where is the class definition for the comparator?
---When Collections.sort requires arguments of the form (List<T> list, Comparator<? super T> c)
+--Collections.sort requires arguments of the form (List<T> list, Comparator<? super T> c)
 In the following code the Comparator constructor is called in the line labeled "Line 1"
 	Collections.sort(dogs, new Comparator<Animal>(){      //line1 Comparator constructor is called here
 			@Override                                 //line 2
@@ -16,4 +16,4 @@ In the following code the Comparator constructor is called in the line labeled "
 
 --the code "new Comparator<Animals>" is an anonymos class, in other words it is decalred and instantiated at the same time, and
 the result of its creation is passeed in Collections.sort as the second argument.  It implements the interface Comparator and 
-They enable you to declare and instantiate a class at the same time.  Lines 2,3,4 (everything between the {}), is the anonymos class's body.
+lines 2,3,4 (everything between the {}), is the anonymos class's body.
