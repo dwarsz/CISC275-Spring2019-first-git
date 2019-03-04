@@ -10,8 +10,7 @@
 --Collections.sort requires arguments of the form (List<T> list, Comparator<? super T> c)
 In the following code the Comparator constructor is called in the line labeled "Line 1"
 	
-	Collections.sort(dogs, new Comparator<Animal>(){      //line1 Comparator constructor is called here
-	
+			Collections.sort(dogs, new Comparator<Animal>(){      //line1 Comparator constructor is called here
 			@Override                                 //line 2
 			public int compare(Animal a, Animal b){  //line 3
 			    return a.getLegs() - b.getLegs();}}); //line 4
